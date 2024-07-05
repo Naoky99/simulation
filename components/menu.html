@@ -1,0 +1,322 @@
+<div class="container d-flex flex-column align-items-center justify-content-center mt-5">
+    <h3>Elija una operacion</h3>
+
+    <h5>Numeros pseudoaleatorios</h5>
+    <div class="accordion" id="accordionExample" style="width: 50rem;">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
+                    Cuadrados medios
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="m-4 form-group d-flex flex-column d-flex flex-column">
+                                <label for="semilla">Semilla:</label>
+                                <input type="number" id="semillaCuadrados" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="longCuadrados">Longitud:</label>
+                                <input type="number" id="longCuadrados" class="float-end">
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p>Resultado: <strong id="resultCuadrados"></strong></p>
+                        </div>
+                    </div>
+                    <button id="generarCuadradosMedios" class="btn btn-secondary">Generar Cuadrados Medios</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Producto medio
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="semilla1Producto">Semilla 1:</label>
+                                <input type="number" id="semilla1Producto" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="semilla2Producto">Semilla 2:</label>
+                                <input type="number" id="semilla2Producto" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="longProducto">Longitud:</label>
+                                <input type="number" id="longProducto" class="float-end">
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p>Resultado: <strong id="resultProducto"></strong></p>
+                        </div>
+                    </div>
+                    <button id="generarProductoMedio" class="btn btn-secondary">Generar Producto Medio</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Congruencial aditivo
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="semillasAditivo">Semillas (separadas por ,):</label>
+                                <input type="text" id="semillasAditivo" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="moduloAditivo">Módulo:</label>
+                                <input type="number" id="moduloAditivo" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="longAditivo">Longitud:</label>
+                                <input type="number" id="longAditivo" class="float-end">
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p>Resultado: <strong id="resultAditivo"></strong></p>
+                        </div>
+                    </div>
+                    <button id="generarAditivo" class="btn btn-secondary">Generar Congruencial Aditivo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Congruencial multiplicativo
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="semillaMultiplicativo">Semilla:</label>
+                                <input type="number" id="semillaMultiplicativo" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="constanteAMultiplicativo">Constante A:</label>
+                                <input type="number" id="constanteAMultiplicativo" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="moduloMultiplicativo">Módulo:</label>
+                                <input type="number" id="moduloMultiplicativo" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="longMultiplicativo">Longitud:</label>
+                                <input type="number" id="longMultiplicativo" class="float-end">
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p>Resultado: <strong id="resultMultiplicativo"></strong></p>
+                        </div>
+                    </div>
+                    <button id="generarMultiplicativo" class="btn btn-secondary">Generar Congruencial Multiplicativo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Congruencial lineal
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="semillaLineal">Semilla:</label>
+                                <input type="number" id="semillaLineal" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="constanteALineal">Constante A:</label>
+                                <input type="number" id="constanteALineal" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="constanteCLineal">Constante C:</label>
+                                <input type="number" id="constanteCLineal" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="moduloLineal">Módulo:</label>
+                                <input type="number" id="moduloLineal" class="float-end">
+                            </div>
+                            <div class="m-4 form-group d-flex flex-column">
+                                <label for="longLineal">Longitud:</label>
+                                <input type="number" id="longLineal" class="float-end">
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p>Resultado: <strong id="resultLineal"></strong></p>
+                        </div>
+                    </div>
+                    <button id="generarLineal" class="btn btn-secondary">Generar Congruencial Lineal</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <hr>
+    <h5>Prueba de uniformidad</h5>
+    <div class="accordion mb-5" id="accordionExample2" style="width: 50rem;">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                    aria-expanded="false" aria-controls="collapseSix">
+                    Metodo Chi cuadrada
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="observedChi">Frecuencias Observadas (separadas por comas):</label>
+                            <input type="text" id="observedChi" class="float-end">
+                          </div>
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="expectedChi">Frecuencias Esperadas (separadas por comas):</label>
+                            <input type="text" id="expectedChi" class="float-end">
+                          </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <p>Chi-Cuadrada: <strong id="resultChi"></strong></p>
+                        </div>
+                      </div>
+                      <button id="calcularChi" class="btn btn-secondary">Calcular Chi-Cuadrada</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Metodo Kolmogorov-Smirnov
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="muestra1KS">Muestra 1 (separada por comas):</label>
+                            <input type="text" id="muestra1KS" class="float-end">
+                          </div>
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="muestra2KS">Muestra 2 (separada por comas):</label>
+                            <input type="text" id="muestra2KS" class="float-end">
+                          </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <p>Kolmogorov-Smirnov: <strong id="resultKS"></strong></p>
+                        </div>
+                      </div>
+                      <button id="calcularKS" class="btn btn-secondary">Calcular KS</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <hr>
+    <h5>Generación de variables aleatorias</h5>
+    <div class="accordion mb-5" id="accordionExample3" style="width: 50rem;">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Método de transformada inversa
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                data-bs-parent="#accordionExample3">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="lambdaTransformada">Lambda:</label>
+                            <input type="number" id="lambdaTransformada" step="0.1" class="float-end">
+                          </div>
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="numTransformada">Número de valores a generar:</label>
+                            <input type="number" id="numTransformada" class="float-end">
+                          </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <p>Transformada Inversa: <strong id="resultTransformada"></strong></p>
+                        </div>
+                      </div>
+                      <button id="generarTransformada" class="btn btn-secondary">Generar Transformada Inversa</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Método de convolución
+                </button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                data-bs-parent="#accordionExample3">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-6">
+                          <div class="m-4 form-group d-flex flex-column d-flex flex-column">
+                            <label for="muConvolucion">Media (μ):</label>
+                            <input type="number" id="muConvolucion" step="0.1" class="float-end">
+                          </div>
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="sigmaConvolucion">Desviación Estándar (σ):</label>
+                            <input type="number" id="sigmaConvolucion" step="0.1" class="float-end">
+                          </div>
+                          <div class="m-4 form-group d-flex flex-column">
+                            <label for="numConvolucion">Número de valores a generar:</label>
+                            <input type="number" id="numConvolucion" class="float-end">
+                          </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <p>Convolución: <strong id="resultConvolucion"></strong></p>
+                        </div>
+                      </div>
+                      <button id="generarConvolucion" class="btn btn-secondary">Generar Convolución</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
